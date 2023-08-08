@@ -35,12 +35,12 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-card" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">STONECREEK CAPITAL</a>
+    <a href="index.html#home" class="w3-bar-item w3-button w3-wide">STONECREEK CAPITAL</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> PORTFOLIO</a>
+      <a href="index.html#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="portfolio.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> PORTFOLIO</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -94,47 +94,6 @@ body, html {
   </div>
 </div>
 
-<!-- Team Section -->
-<div class="w3-container" style="padding:128px 16px;" id="team">
-  <h3 class="w3-center">MEET OUR TEAM</h3>
-  <p class="w3-center w3-large">The ones who run this company</p>
-  <div class="w3-row-padding" style="margin-top:64px; margin-left:20%; margin-right: 20%; text-align: center;">
-    <div class="w3-col l6 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="images/drewheadshot.jpg" alt="Drew" style="width:100%">
-        <div class="w3-container">
-          <h3>Drew Adams</h3>
-          <p class="w3-opacity">President</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col l6 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="images/bruce.jpg" alt="Bruce" style="width:100%">
-        <div class="w3-container">
-          <h3>Bruce Lipian</h3>
-          <p class="w3-opacity">Managing Director</p>
-          <p>Bruce is a founding principal and Managing Director of StoneCreek Capital LLC. Bruce's previous experience includes four years
-            as an Associate/Vice President at Kelso & Co. and three years as an Assistant Vice
-            President in the high technology division of the Bank of Boston.
-            <br><br>
-            Bruce is a founding member of the Orange County Transaction Network, is an active
-member of the Orange County chapter of the Association for Corporate Growth, is on the
-organizing committee for the Southern California ACG MBA Cup, was an adjunct
-professor at the Mihaylo College of Business and Economics (California State University
-Fullerton) and served as Vice Chairman of the Board of Kids Konnected.
-<br><br>
-Bruce received his BA (economics) from the University of Washington, Phi Beta Kappa
-and his MBA (finance) from the Wharton School, University of Pennsylvania.</p>
-          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- Promo Section "Statistics" -->
 <div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
   <div class="w3-quarter">
@@ -155,53 +114,14 @@ and his MBA (finance) from the Wharton School, University of Pennsylvania.</p>
   </div>
 </div>
 
-<!-- Portfolio Section -->
-<div class="w3-container" style="padding:128px 16px" id="work">
-  <h3 class="w3-center">REPRESENTATIVE TRANSACTIONS</h3>
-  <p class="w3-center w3-large">Our portfolio of companies we've worked with.</p>
-
-  <div class="w3-row-padding" style="margin-top:64px; margin-left: 20%; margin-right: 10%;">
-    <div class="w3-col l4 m6">
-      <img src="images/pinnacle_logo.png" style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="Industry-leading full-service provider of custom tradeshow exhibits, experiential, and digital events for corporate customers with national or global brands.">
-    </div>
-    <div class="w3-col l4 m6">
-      <img src="images/mobscene_logo.png" style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="Emmy nominated and multiple awrd winning entertainment marketing, advertising, content, and production agency for high profile entertainment properties.">
-    </div>
-    <div class="w3-col l4 m6">
-      <img src="images/montana_logo.png" style="width:60%" onclick="onClick(this)" class="w3-hover-opacity" alt="Leading Western lifestyle brand and a designer, manufacturer, and dsitributor of jewelry and belt buckles.">
-    </div>
-  </div>
-
-  <div class="w3-row-padding w3-section" style="margin-top:64px; margin-left: 20%; margin-right: 10%;">
-    <div class="w3-col l4 m6">
-      <img src="images/kova_logo.png" style="width:60%" onclick="onClick(this)" class="w3-hover-opacity" alt="Leading manufacturer of disposable plastic and control diagnostic products for the automated and non-automated urinanalysis market. Leading manufacturer and marketer of controls and disposable preparation products used in clinical and toxological laboratories.">
-    </div>
-    <div class="w3-col l4 m6">
-      <img src="images/kolmar_logo.png" style="width:60%" onclick="onClick(this)" class="w3-hover-opacity" alt="Leading color cosmetic contract manufacture and development laboratory that supports the world's cosmetic brands.">
-    </div>
-    <div class="w3-col l4 m6">
-      <img src="images/firedex_logo.png" style="width:60%" onclick="onClick(this)" class="w3-hover-opacity" alt="Leading manufacturer and distributor of protective safety apparel to the fire protection industry.">
-    </div>
-  </div>
-</div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
 <!-- Contact Section -->
 <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
   <h3 class="w3-center">CONTACT</h3>
   <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
   <div style="margin-top:48px">
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Orange County, CA</p>
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Orange County, CA & Fort Worth, TX</p>
     <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: drew@stonecreekcapital.com</p>
     <br>
     <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
@@ -224,14 +144,6 @@ and his MBA (finance) from the Wharton School, University of Pennsylvania.</p>
 </footer>
  
 <script>
-// Modal Image Gallery
-function onClick(element) {
-    document.getElementById("img01").src = element.src;
-    document.getElementById("modal01").style.display = "block";
-    document.getElementById("img01").style.width = "60%";
-    var captionText = document.getElementById("caption");
-    captionText.innerHTML = element.alt;
-  }
   
   
   // Toggle between showing and hiding the sidebar when clicking the menu icon

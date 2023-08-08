@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Stone Creek Capital Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="script" href="script.js">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/creek.jpeg");
+  min-height: 70%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html#home" class="w3-bar-item w3-button w3-wide">STONECREEK CAPITAL</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="index.html#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="portfolio.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> PORTFOLIO</a>
+      <a href="index.html#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close x</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px;" id="team">
+    <h3 class="w3-center">MEET OUR TEAM</h3>
+    <p class="w3-center w3-large">The ones who run this company</p>
+    <div class="w3-row-padding" style="margin-top:64px; margin-left:20%; margin-right: 20%; text-align: center;">
+      <div class="w3-col l6 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="images/drewheadshot.jpg" alt="Drew" style="width:100%">
+          <div class="w3-container">
+            <h3>Drew Adams</h3>
+            <p class="w3-opacity">President</p>
+            <p>Drew is the President of StoneCreek Capital LLC. Drew has been involved in direct equity investing and leveraged financings for over 35 years. 
+              Prior to StoneCreek, Drew was with Wells Fargo Bank in Los Angeles where he developed and managed a successful portfolio of highly leveraged loans.
+              He has been responsible for over $1 billion in leveraged transactions as a senior lender and equity principal.
+              Drew currently oversees the day-to-day operations and investment activity at StoneCreek.
+              Drew has served on the board of directors of Outsourcing Services Group, FoodHandler Holdings, Delafoil Holdings, BarrierSafe Solutions International, Fire-Dex LLC,
+              Brand & Oppenheimer, Kova International, SteelHorse Automotive, Pinnacle Exhibits, Access DMC, Mob Scene and Montana Silversmiths.
+              <br><br>
+              He received his BA in Marketing and his MBA in Real Estate and Finance from Texas Christian University.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l6 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="images/bruce.jpg" alt="Bruce" style="width:100%">
+          <div class="w3-container">
+            <h3>Bruce Lipian</h3>
+            <p class="w3-opacity">Managing Director</p>
+            <p>Bruce is a founding principal and Managing Director of StoneCreek Capital LLC. Bruce's previous experience includes four years
+              as an Associate/Vice President at Kelso & Co. and three years as an Assistant Vice President in the high technology division of the Bank of Boston.
+              Bruce is a founding member of the Orange County Transaction Network, is an active member of the Orange County chapter of the Association for Corporate Growth, is on the organizing committee for the Southern California ACG MBA Cup, was an adjunct professor at the Mihaylo College of Business and Economics (California State University Fullerton) and served as Vice Chairman of the Board of Kids Konnected.  
+              <br><br>
+              Bruce received his BA (economics) from the University of Washington, Phi Beta Kappa
+              and his MBA (finance) from the Wharton School, University of Pennsylvania.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
