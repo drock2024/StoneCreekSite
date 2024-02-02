@@ -28,6 +28,29 @@ body, html {
 .w3-bar .w3-button {
   padding: 16px;
 }
+
+#more {
+    display: none;
+    animation: expand 1s 1;
+    animation-play-state: paused;
+}
+
+#more2 {
+    display: none;
+    animation: expand 1s 1;
+    animation-play-state: paused;
+}
+
+#more3 {
+    display: none;
+    animation: expand 1s 1;
+    animation-play-state: paused;
+}
+
+@keyframes expand {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
 </style>
 </head>
 <body>
@@ -35,9 +58,9 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-blue w3-card" id="myNavbar">
-    <a href="index.html#home" class="w3-bar-item w3-button w3-wide">STONECREEK CAPITAL</a>
+    <a href="index.html#home" class="w3-bar-item w3-button w3-wide w3-large">STONECREEK CAPITAL</a>
     <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
+    <div class="w3-right w3-hide-small w3-hide-medium w3-hide-large">
       <a href="index.html#about" class="w3-bar-item w3-button">ABOUT</a>
       <a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
       <a href="portfolio.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> PORTFOLIO</a>
@@ -45,19 +68,19 @@ body, html {
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-large w3-right" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close x</a>
-  <a href="index.html#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a>
-  <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button">OUR TEAM</a>
+  <a href="portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button">REPRESENTATIVE TRANSACTIONS</a>
+  <a href="executives.html" onclick="w3_close()" class="w3-bar-item w3-button">FOR SELLERS AND EXECUTIVES</a>
+  <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT US</a>
 </nav>
 
 <!-- Header with full-height image -->
@@ -80,17 +103,45 @@ body, html {
     <div class="w3-third">
       <img src="images/ripple.jpg" style="width:70%">
       <p class="w3-large">Experienced</p>
-      <p>Founded in 1992, StoneCreek has sponsored the acquisition or recapitalization of more than 45 companies, we are on of the industry's most well-established independent sponsors.</p>
+      <p>Founded in 1992, StoneCreek has sponsored the acquisition or recapitalization of more than 45 companies, we are on of the industry's most well-established independent sponsors
+      <span id="dots">...</span></p>
+      <p class="w3-left"><span id="more">The current principals are responsible for over 15 platform acquisitions and over 30
+        add-on acquisitions and supported another 15 platform acquisitions while at Kelso &amp; Co.
+        and The Gordon+Morris Group, deploying millions in junior capital and over
+        [$2.0] billion in enterprise value. Over 20 of the platforms and addon acquisitions were
+        Independent Sponsor transactions.</span></p>
+          <button class="w3-button w3-center w3-light-grey w3-padding-large w3-large w3-hover-opacity-off" onclick="myFunction()" id="myBtn">Read more</button>
     </div>
     <div class="w3-third">
       <img src="images/creek1.jpg" style="width:70%">
       <p class="w3-large">People Driven</p>
-      <p><i><strong>Partners in Growth</strong></i> is not just a catchphrase to us; we develop strong, active, value-added partnerships with management and owners by having each party's unique capabilities and interests emphasized.</p>
+      <p><i><strong>Partners in Growth</strong></i> is not just a catchphrase to us; we develop strong, active, value-added partnerships with management and owners by having each party's unique capabilities and interests emphasized
+      <span id="dots2">...</p>
+      <p class="w3-left"><span id="more2">Management retains the responsibility, authority, and flexibility for executing against the
+        operating and strategic plans, while StoneCreek, in concert with rest of the board, works
+        closely with management to develop or refine a strategic plan and to implement improved
+        financial reporting and KPIs. <br><br>
+        While industry tailwinds are nice, just betting on an overall industry doesn't create value,
+        and is more appropriate when investing in the public markets. Controlling and improving
+        internal elements and driving throughput through a focus on culture, systems and
+        processes, innovation, and continuous improvement, leads to value creation, often despite
+        macro-economic and industry trends.</span></p>
+          <button class="w3-button w3-center w3-light-grey w3-padding-large w3-large w3-hover-opacity-off" onclick="myFunction2()" id="myBtn2">Read more</button>
     </div>
     <div class="w3-third">
       <img src="images/creek2.jpg" style="width:70%">
       <p class="w3-large">Value Creation</p>
-      <p>StoneCreek utilizes proprietary strategic planning and project management tools, including a 100 Day Plan and the <i>Value Creation Roadmap</i> which have been proven effective on a variety of projects.</p>
+      <p>StoneCreek utilizes proprietary strategic planning and project management tools, including a 100 Day Plan and the <i>Value Creation Roadmap</i> which have been proven effective on a variety of projects
+      <span id="dots3">...</p>
+        <p class="w3-left"><span id="more3">True value creation requires a focus well beyond our investment horizon by identifying
+          strategic opportunities that may not come to fruition for five or ten years, thus leaving gas
+          in the tank for the next investor.<br><br>
+          We actively work with management teams to secure the transaction, access supportive
+          acquisition financing, and implement key strategic and operational initiatives utilizing a
+          variety of proprietary tools, to refine and develop an actionable strategic plan to drive
+          value appreciation. StoneCreek's access to capital, proven ability to close deals, strategic
+          support and longstanding history of supporting management makes us an ideal partner.</p>
+            <button class="w3-button w3-center w3-light-grey w3-padding-large w3-large w3-hover-opacity-off" onclick="myFunction3()" id="myBtn3">Read more</button>
     </div>
   </div>
 </div>
@@ -194,7 +245,7 @@ body, html {
 <!-- Footer -->
 <footer class="w3-center w3-blue w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <p>StoneCreek Capital, Inc. 2023</p>
+  <p>StoneCreek Capital, Inc. 2024</p>
 </footer>
  
 <script>
@@ -215,6 +266,57 @@ body, html {
   function w3_close() {
       mySidebar.style.display = "none";
   }
+
+  function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+            moreText.style.animationPlayState = "running";
+        }
+    }
+
+    function myFunction2() {
+        var dots = document.getElementById("dots2");
+        var moreText = document.getElementById("more2");
+        var btnText = document.getElementById("myBtn2");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+            moreText.style.animationPlayState = "running";
+        }
+    }
+
+    function myFunction3() {
+        var dots = document.getElementById("dots3");
+        var moreText = document.getElementById("more3");
+        var btnText = document.getElementById("myBtn3");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+            moreText.style.animationPlayState = "running";
+        }
+    }
 </script>
 
 </body>

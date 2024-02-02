@@ -22,7 +22,7 @@ body, html {
   background-position: center;
   background-size: cover;
   background-image: url("images/creek.jpeg");
-  min-height: 70%;
+  min-height: 40%;
 }
 
 .w3-bar .w3-button {
@@ -40,36 +40,33 @@ body, html {
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-blue w3-card" id="myNavbar">
-    <a href="index.html#home" class="w3-bar-item w3-button w3-wide">STONECREEK CAPITAL</a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="index.html#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
-      <a href="portfolio.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> PORTFOLIO</a>
-      <a href="index.html#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
-    </div>
+    <a href="index.html#home" class="w3-bar-item w3-button w3-wide w3-large">STONECREEK CAPITAL</a>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-large" onclick="w3_open()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close x</a>
-  <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
-  <a href="portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a>
-  <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button">OUR TEAM</a>
+  <a href="portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button">REPRESENTATIVE TRANSACTIONS</a>
+  <a href="executives.html" onclick="w3_close()" class="w3-bar-item w3-button">FOR SELLERS AND EXECUTIVES</a>
+  <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT US</a>
 </nav>
 
-<hr>
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px;">
+  <span class="w3-padding-large w3-xlarge w3-margin-top">REPRESENTATIVE TRANSACTIONS</span>
+  <p class="w3-padding-large w3-large">Companies we've worked with</p>
+  </div> 
+</header>
 <!-- Portfolio Section -->
 <div class="w3-container" style="padding:16px 16px" id="work">
-    <h3 class="w3-center">REPRESENTATIVE TRANSACTIONS</h3>
-    <p class="w3-center w3-large">Companies we've worked with.</p>
   
     <div class="w3-row-padding" style="margin-top:64px; margin-left: 10%; margin-right: 10%;">
       <div class="w3-col l3 m6">

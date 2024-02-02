@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Stone Creek Capital Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="script" href="script.js">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/creek.jpeg");
+  min-height: 40%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#more {
+    display: none;
+    animation: expand 2s 1;
+    animation-play-state: paused;
+}
+
+@keyframes expand {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+</style>
+</head>
+<body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <div class="w3-bar w3-blue w3-card" id="myNavbar">
+            <a href="index.html#home" class="w3-bar-item w3-button w3-wide w3-large">STONECREEK CAPITAL</a>    
+            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-large" onclick="w3_open()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+  
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close x</a>
+    <a href="team.html" onclick="w3_close()" class="w3-bar-item w3-button">OUR TEAM</a>
+    <a href="portfolio.html" onclick="w3_close()" class="w3-bar-item w3-button">REPRESENTATIVE TRANSACTIONS</a>
+    <a href="executives.html" onclick="w3_close()" class="w3-bar-item w3-button">FOR SELLERS AND EXECUTIVES</a>
+    <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT US</a>
+  </nav>
+
+      <!-- Header with full-height image -->
+    <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-padding-large w3-xlarge w3-margin-top">FOR SELLERS AND C-LEVEL EXECUTIVES</span>
+    </div> 
+  </header>
+
+  <!--Content-->
+  <div class="w3-container" style="padding:128px 16px; padding-left: 20%; padding-right: 20%;" id="about">
+    <h3 class="w3-center w3-blue">WHETHER YOU ARE A...</h3>
+        <div class="w3-row-padding w3-center w3-light-grey" style="margin-top:32px; padding-left: 10%; padding-right: 10%;">
+        <div class="w3-third">
+            <p class="w3-large">Senior Executive seeking a partner to help pursue an acquisition.</p>
+        </div>
+        <div class="w3-third">
+            <p class="w3-large">Owner striving to diversify your holdings and or/retire.</p>
+        </div>
+        <div class="w3-third">
+            <p class="w3-large">Looking to recapitalize or pursue an acquisition.</p>
+        </div>
+        </div>
+
+        <div class="w3-row-padding w3-center w3-light-grey" style=" padding-left: 15%; padding-right: 15%;">
+            <div class="w3-half">
+            <p class="w3-large">Management team pursuing a buyout or growth capital.</p>
+            </div>
+            <div class="w3-half">
+            <p class="w3-large">Co-owner interested in buying out your partner(s).</p>
+            </div>
+            </div>
+      <p class="w3-center w3-large"><strong>We have the experience, knowledge, access to capital and proven ability to close
+        transactions to make your goal become a reality.</strong><span id="dots">...</span></p>
+        <p class="w3-left w3-large"><span id="more">Our focus and approach start with understanding your goals. To assist in this process, we
+            developed a white paper titled the Owners Reflection, which we encourage you to
+            download and review. <br><br>
+            While we primarily back management teams that have a successful track record as
+            leading companies in their industry, we also pursue transactions in which companies have
+            reached generational or ownership milestones, or where the greatest value proposition is
+            in attracting a new leader.
+            <br><br>
+            StoneCreek specializes in helping C level executives, who want to become
+            owner/operators, close the transaction and maximize their upside. Our business model is
+            specially designed to help you turn an acquisition opportunity into a reality by providing
+            complementary capabilities that will increase the likelihood you will be able to get your
+            deal done, from approaching the seller with credibility, negotiating the valuation and key
+            terms, raising capital, and implementing incentive programs to align interests.</span></p>
+
+            <button class="w3-button w3-right w3-light-grey w3-padding-large w3-large w3-hover-opacity-off" onclick="myFunction()" id="myBtn">Read more</button>
+    </div>
+</body>
+<script>
+  
+  
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+    
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+      } else {
+        mySidebar.style.display = 'block';
+      }
+    }
+    
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+    }
+
+    function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+            moreText.style.animationPlayState = "running";
+        }
+    }
+  </script>
