@@ -65,47 +65,6 @@ body, html {
   <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
 
-<!--Investment Criteria-->
-<div class="w3-container" style="padding:64px 16px" id="work">
-  <h3 class="w3-center">INVESTMENT CRITERIA</h3>
-  <p class="w3-center w3-large">What we're looking for.</p>
-</div>
-  <table class="center" style="width: 60%; text-align: center;">
-    <tr style="vertical-align: top;">
-      <td style="width: 33%; border: 1px solid black;">
-        <h3>FINANCIALS</h3>
-        <p>EBITDA: $2 - $15 Million<br><br>Enterprise Value: $10 - $100 Million</p>
-      </td>
-    </tr>
-    <tr style="vertical-align: top;">
-      <td style="width: 33%; border: 1px solid black;">
-        <h3>INDUSTRIES</h3>
-        <p><ul style="text-align: left;">
-            <li>Business Services</li>
-            <li>Media & Entertainment</li>
-            <li>Aerospace & Defense</li>
-            <li>Manufacturing</li>
-            <li>Experiential Marketing</li> 
-            <li>Value-Added Distribution</li> 
-            <li>Retail/Restaurant</li>
-        </ul></p>
-      </td>
-    </tr>
-    <tr style="vertical-align: top;">
-      <td style="width: 33%; border: 1px solid black;">
-        <h3>COMPANY PROFILE</h3>
-        <p><ul style="text-align: left;">
-          <li>Strong Management Team</li>
-          <li>Historical Growth & Profitability</li>
-          <li>Opportunities for Growth & Improvement</li>
-          <li>Unique & Defensible Market Position</li>
-          <li>Healthy End Markets</li> 
-          <li>Limited Capital Intensity</li> 
-          <li>Add-on Acquisition Opportunities</li>
-      </ul></p>
-      </td>
-    </tr>
-  </table>
 <hr>
 <!-- Portfolio Section -->
 <div class="w3-container" style="padding:16px 16px" id="work">
@@ -209,9 +168,6 @@ body, html {
   }
     // Modal Image Gallery
 function onClick(element) {
-    document.getElementById("img01").src = element.src;
-    document.getElementById("modal01").style.display = "block";
-    document.getElementById("img01").style.width = "60%";
     var url = document.getElementById("caption");
     url.innerHTML = element.alt;
     window.open(element.alt)
